@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Pokemon Inventory Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='index.js'></script>
+    <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+    <header>
+        <h1>Pokemon Inventory Shop</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="wallet.html">My Wallet</a>
+    </nav>
+    <main>
+        <div id="shop">
+            <h2>Available Items to Purchase</h2>
+        </div>
+        <section>
+            <article>
+                <form action="/order" method="POST">                                       
+                    <fieldset>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Item</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Air Ballon</td>
+                                    <td>
+                                        <label for="airballon">
+                                        <input type="radio" required
+                                            name="itemOrder"
+                                            id="airballoon"
+                                            value="It gives the Pokemon with this item to float."
+                                        /> It gives the Pokemon with this item to float.
+                                        </label>
+                                    </td>
+                                    <td>2000 yen</td>            
+                                </tr>
+                                <tr>
+                                    <td>Apicot Berry</td>
+                                    <td>
+                                        <label for="apicotberry">
+                                        <input type="radio" required
+                                            name="itemOrder"
+                                            id="apicotberry"
+                                            value="It raises Special Defense when HP is low."
+                                        />It raises Special Defense when HP is low.
+                                        </label>
+                                    </td>
+                                    <td>3000 yen</td>            
+                                </tr>
+                                <tr>
+                                    <td>Berry Juice</td>
+                                    <td>
+                                        <label for="berryjuice">
+                                        <input type="radio" required
+                                            name="itemOrder"
+                                            id="berryjuice"
+                                            value="It restores 20 HP on the chosen Pokemon."
+                                        />It restores 20 HP on the chosen Pokemon.
+                                        </label>
+                                    </td>
+                                    <td>4000 yen</td>            
+                                </tr>
+                            </tbody>
+                          </table>
+                        <br>
+                        <p>
+                            <label for="quantity">Enter quantity between 1 and 99.</label>
+                                <textarea 
+                                name="quantity" 
+                                id="quantity" 
+                                minlenth="1" 
+                                maxlenth="2" 
+                                placeholder="Quantity" 
+                                ></textarea>
+                        </p>
+                        <button type="submit">Buy Item</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
