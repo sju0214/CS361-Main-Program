@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="wallet.js"></script>
+    <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+    <header>
+        <h1>My Wallet</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="wallet.html">My Wallet</a>
+    </nav>
+    <main>
+        <div id="wallet">
+            <h2>Available Balance: <span id="balance">10,000 yen</span></h2>
+
+            <div class="wallet-actions">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
